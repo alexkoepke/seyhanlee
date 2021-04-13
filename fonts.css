@@ -1,0 +1,12 @@
+
+@font-face {
+    font-family: Rationell Light;
+    src: url(/fonts/Rationell/Rationell-Light/font.woff);
+    src: url(/fonts/Rationell/Rationell-Light/font.woff2);
+  }
+
+@font-face {
+    font-family: Rationell Bold;
+    src: url(/fonts/Rationell/Rationell-Bold/Rationell-Bold.woff);
+    src: url(/fonts/Rationell/Rationell-Bold/font.woff2);
+  }
