@@ -1,0 +1,362 @@
+@import "./fonts.css";
+* {
+    user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+
+body {
+    height: 200vh;
+    font-family: 'Rationell Light';
+}
+
+.white {
+    background-color: white;
+}
+
+.brown {
+    background-color: #27211d;
+}
+
+.orange {
+    background-color: #c32b1e;
+}
+
+.lightbrown {
+    background-color: #573f17;
+}
+
+.gris {
+    background-color: #9b9893;
+}
+
+.azul {
+    background-color: #73c9db;
+}
+
+
+.page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.logoverlay {
+    z-index: 200;
+    width: 65%;
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8%;
+}
+
+.overlay img{
+  position:absolute;
+  left:0;top:0;
+  width:50%;
+  height:50%;
+  z-index:2;
+}
+
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
+
+.quote-text {
+    font-size: 36px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 14px;
+    line-height: 150%;
+}
+
+.quote-pull {
+    font-size: 52px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 14px;
+    line-height: 150%;
+}
+
+.steve {
+    font-size: 42px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 14px;
+    line-height: 118%;
+}
+
+
+.quote-push {
+    font-size: 42px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 14px;
+    line-height: 150%;
+}
+
+.quote-credit {
+    display: flex;
+    width: fit-content;
+    align-self: flex-end;
+    font-size: 28px;
+}
+
+.video-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-container-cm {
+    object-fit: contain;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+.video-title {
+    font-size: 50px;
+    z-index: 2;
+    width: fit-content;
+    margin: 0px auto;
+    display: flex;
+    align-self: center;
+    padding: 8px;
+    background-color: white;
+    text-align: center;
+    letter-spacing: -0.3px;
+}
+
+.video-title-mainstream {
+    font-size: 50px;
+    z-index: 2;
+    width: fit-content;
+    margin: 0px auto;
+    display: flex;
+    align-self: center;
+    padding: 8px;
+    background-color: white;
+    text-align: center;
+    letter-spacing: -1.5px;
+}
+
+.overlaycaption {
+    font-size: 12px;
+    z-index: 3;
+    width: fit-content;
+    position: absolute;
+    left: 1.1%;
+    padding-bottom: 1.1%;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-start;
+    color: #d6d8d8;
+    overflow: hidden;
+}
+
+.overlaycaptiondark {
+    font-size: 12px;
+    z-index: 3;
+    width: fit-content;
+    position: absolute;
+    left: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-start;
+    color: #686969;
+    overflow: hidden;
+}
+
+.overlayartist {
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+    z-index: 1;
+    height: fit-content;
+}
+
+#last-small {
+    display: none;
+}
+
+
+@media screen and (min-device-width: 1200px) 
+  and (max-device-width: 2200px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+      
+    .video-title-mainstream {
+        font-size: 40px;
+        letter-spacing: -0.1px;
+    }
+    
+    .video-title {
+        font-size: 40px;
+        letter-spacing: -0.1px;
+    }
+    
+    .quote-push {
+        font-size: 32px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 18px;
+        line-height: 120%;
+    }
+
+    .steve {
+        font-size: 42px;
+        padding-bottom: 14px;
+        line-height: 118%;
+    }
+
+    .quote-pull {
+        font-size: 36px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 18px;
+        line-height: 150%;
+    }
+
+    .quote-text {
+        font-size: 24px;
+        padding-bottom: 18px;
+        line-height: 140%;
+    }
+    
+    .quote-credit {
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .quote-text {
+        font-size: 20px;
+    }
+    .quote-credit {
+        _font-size: 12px;
+    }
+    
+    .steve {
+        font-size: 20px;
+        padding-bottom: 14px;
+        line-height: 150%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1210px) {
+    .video-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .quote-section-xs {
+        width: 80vw !important;
+    }
+    .video-title {
+        font-size: 24px;
+    }
+    .quote-credit {
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    .video-title {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .logoverlay {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .video-title {
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .video-title {
+        _font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .quote-pull {
+        font-size: 32px;
+    }
+    .quote-push {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .quote-pull {
+        font-size: 20px;
+    }
+    .quote-push {
+        font-size: 16px;
+        line-height: 125%;
+    }
+    
+    .steve {
+        font-size: 24px;
+        padding-bottom: 14px;
+        line-height: 118%;
+    }
+
+}
+
+@media screen and (max-width: 1100px) and (max-height: 900px) {
+    #last-big {
+        display: none;
+    }
+    #last-small {
+        display: flex;
+    }
+}
